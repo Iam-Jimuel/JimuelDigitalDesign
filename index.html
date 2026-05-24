@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="description" content="Portfolio of Graphic & UI Designer – showcasing creative design work in branding, UI/UX, and visual identity.">
+  <title>Jimuel Jerome Perez Silang| Graphic & UI Design</title>
+  <!-- Google Fonts + Font Awesome -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700;14..32,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ========== HEADER & NAVIGATION ========== -->
+  <header class="site-header">
+    <div class="container header-flex">
+      <div class="logo">
+        <a href="#">Jim<span class="logo-accent">uel</span></a>
+      </div>
+      <nav class="main-nav">
+        <ul class="nav-list">
+          <li><a href="#home" class="nav-link">Home</a></li>
+          <li><a href="#work" class="nav-link">Work</a></li>
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+      <button class="darkmode-toggle" id="darkmodeToggleBtn" aria-label="Switch to dark/light mode">
+        <i class="fas fa-moon"></i>
+      </button>
+    </div>
+  </header>
+
+  <main>
+    <!-- ========== HERO SECTION ========== -->
+    <section id="home" class="hero">
+      <div class="container hero-grid">
+        <div class="hero-content">
+          <span class="hero-tagline">Graphic & UI Designer</span>
+          <h1>Crafting meaningful <br> <span class="highlight-text">visual stories</span> & digital experiences</h1>
+          <p>I’m Jimuel — blending bold graphic identity with intuitive UI design. Based on clarity, contrast, and purpose.</p>
+          <div class="hero-buttons">
+            <a href="#work" class="btn btn-primary">View projects <i class="fas fa-arrow-right"></i></a>
+            <a href="#contact" class="btn btn-outline">Let's talk</a>
+          </div>
+        </div>
+        <div class="hero-visual">
+          <div class="floating-icon">
+            <i class="fas fa-palette"></i>
+          </div>
+          <div class="floating-icon second">
+            <i class="fas fa-mobile-alt"></i>
+          </div>
+          <div class="hero-shape"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== REVAMPED WORK SECTION (CAROUSEL) ========== -->
+    <section id="work" class="work-section">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Selected works</span>
+          <h2>Design that speaks — <br> from pixels to print</h2>
+          <!-- Category buttons -->
+          <div class="filter-tabs">
+            <button class="filter-btn" data-category="ui">UI Design <span class="badge">12</span></button>
+            <button class="filter-btn" data-category="graphic">Graphic Design <span class="badge">21</span></button>
+            <button class="filter-btn" data-category="logo">Logo Designs <span class="badge">6</span></button>
+          </div>
+        </div>
+
+        <!-- CAROUSEL CONTAINER -->
+        <div class="carousel-wrapper">
+          <div class="carousel-container">
+            <div class="carousel-track" id="carouselTrack">
+              <!-- slides injected dynamically -->
+            </div>
+          </div>
+          <button class="carousel-btn prev-btn" id="prevBtn"><i class="fas fa-chevron-left"></i></button>
+          <button class="carousel-btn next-btn" id="nextBtn"><i class="fas fa-chevron-right"></i></button>
+        </div>
+        <div class="carousel-dots" id="carouselDots"></div>
+      </div>
+    </section>
+
+    <!-- ========== ABOUT SECTION ========== -->
+    <section id="about" class="about-section">
+  <div class="container about-flex">
+    <div class="about-image">
+      <div class="about-img-placeholder">
+        <img src="Picsart_26-05-12_12-14-15-040.jpg" alt="Alex Rivera portrait">
+      </div>
+    </div>
+    <div class="about-content">
+          <span class="section-subtitle">About me</span>
+          <h2>Designer with a dual soul — <span class="highlight-text">visual & digital</span></h2>
+          <p>For the past few years, I’ve collaborated with startups, government and creatives to build identities and interfaces that feel alive. My approach merges graphic design fundamentals with modern UI principles — every detail serves a story.</p>
+          <p><strong>Midnight blue & white</strong> aren't just colors in my palette — they represent depth, clarity, and timeless elegance.</p>
+          <div class="skills-list">
+            <span>Brand Identity</span>
+            <span>UI/UX Design</span>
+            <span>Typography</span>
+            <span>Figma · Adobe Suite</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ========== CONTACT SECTION ========== -->
+    <section id="contact" class="contact-section">
+      <div class="container contact-container">
+        <div class="contact-info">
+          <span class="section-subtitle">Get in touch</span>
+          <h2>Let’s bring ideas to life</h2>
+          <p>Got a project in mind? Whether it's a visual rebrand or a digital product — I'd love to hear from you.</p>
+          <ul class="contact-details">
+            <li><i class="fas fa-envelope"></i> jimueljeromesilang@gmail.com</li>
+            <li><i class="fas fa-phone-alt"></i> +63 951-912-2335</li>
+   
+          </ul>
+        </div>
+        <div class="contact-form">
+          <form id="dummyForm">
+            <input type="text" placeholder="Your name" required>
+            <input type="email" placeholder="Email address" required>
+            <textarea rows="4" placeholder="Tell me about your project..."></textarea>
+            <button type="submit" class="btn btn-primary full-width">Send message <i class="fas fa-paper-plane"></i></button>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-flex">
+      <p>© 2025 Jimuel Jerome Perez Silang — Graphic & UI Design.</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Behance"><i class="fab fa-behance"></i></a>
+        <a href="#" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+        <a href="linkedin.com/jimueljeromesilang" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
